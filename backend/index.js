@@ -15,7 +15,7 @@ const webhookRoute = require('./routes/webhook.js'); // path to your file
 app.use('/webhook', webhookRoute);
 
 app.use(cors({
-    origin:'http://localhost:3000',
+    origin:'http://localhost:3001',
     credentials:true,
 }))
 
