@@ -15,7 +15,8 @@ const webhookRoute = require('./routes/webhook.js'); // path to your file
 app.use('/webhook', webhookRoute);
 
 app.use(cors({
-    origin:'https://ecommerce-food-psi.vercel.app',
+    //origin:'https://ecommerce-food-psi.vercel.app',
+    origin: true,
     credentials:true,
 }))
 
